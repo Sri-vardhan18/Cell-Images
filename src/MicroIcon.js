@@ -23,6 +23,7 @@ const MicrosoftWordTable = () => {
 
   return (
     <>
+    <div className="words-tabular">
     <div className="word-table">
         {cellData.map(cell=>(
             <div
@@ -31,6 +32,7 @@ const MicrosoftWordTable = () => {
             onClick={()=>toggleCellSelection(cell.id)}>
             </div>
         ))}
+    </div>
     </div>
     <div className="selected-images">
       {selectedCells.map(cellId => (
